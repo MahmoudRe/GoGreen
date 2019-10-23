@@ -3,46 +3,65 @@
 </h1>
 <p align="center">
 <sup>
-<b>GoGreen is an app to help you track and reduce your co2 emissions with gamification aspects</b>
+<b>GoGreen is a Java RESTful application to help you track and reduce your CO2 emissions with gamification aspects</b>
 </sup>
 </p>
 
-## How to use the GoGreen App
-### Login
+# About the project
+This project was part of my university curriculum, originally with a group of 7 from which only 4 members remained
+by the end of the course. Objective of the course was to build a software application helping people live a
+more sustainable lifestyle. Students were thrown in the deep and had to develop the app completely
+by themselves from scratch with weekly progress reviews with teaching assistants.  
+The course/project concluded with a final presentation and received a 10/10 grade.   
+The presentation, calculations for the CO2 emissions per activity and grading rubric can also be found in the repository.
+
+## Tools used for the project
+Tools: Agile and Scrum methodologies, Checkstyle and Jacoco  
+Technologies: JavaFX, Gluon Scenebuilder, Java Springboot, Hibernate, MySQL, jUnit, Mockito, Maven,
+Continuous Integration, Git with Gitlab, JFoenix Material Design
+
+## Responsibilities
+I have been mainly responsible for building the backend with the Java Springboot framework, 
+setting up the project structure, login-signup screens and the functionality of 2 activities.
+I have also fulfilled the project manager role by creating weekly documentation,
+managing the scrumboard and setting the goals for the weekly sprints during the 10 week course.
+Currently there are 6 activity recommendations to help users reduce their emissions.   
+
+## Running the application
+To run the application clone down the repository and simply run the GoGreen App Executable.jar file. You need to have the [Java Runtime Environment(JRE)](https://www.oracle.com/technetwork/java/javase/downloads/index.html) installed on your computer in order to run the app.
+
+## App Tour
 #### Login
 ![Screenshot of Login Screen](doc/screenshots/Login.png)
-1.  Use this field to fill in your username
-2.  Use this field to fill in your password
-3.  After you completed your credentials press this 'login' button
-4.  If you don't have an account use this sign up button
 
 #### Sign up
 ![Screenshot of Sign Up Screen](doc/screenshots/SignUp.png)
-1.  Username to your liking
-2.  Your email address
-3.  The password you would like to use
-4.  If all credentials are filled in press this button to create a new account
-5.  Use this button to go back to the login screen
 
 ### Homescreen
 ![Screenshot of Homescreen](doc/screenshots/HomeScreen.png)
-Where all the magic happens. Shows your saved co2 in kilos.
-The notification box at the bottom shows how much co2 you saved with your last action.
+The circle in the middle shows the total CO2 reduction.
+The notification box at the bottom shows how much co2 has been saved by the last action. 
 
-![Screenshot of HomeScreen extended](doc/screenshots/HomeScreenExt.png)
-When you add a solar panel, you get this form for some additional information.
-e
+
+![Screenshot of HomeScreen extended](doc/screenshots/SolarPanel.png)
+When you add a solar panel, additional details can be provided.
+
 ### Transport
 ![Screenshot of Transportation Screen](doc/screenshots/Transportation.png)
-If you commit to Bike of PT (Public Transport), this will also put a google maps link in you clipboard with the route.
-So you can immediately see what route is suggested in you browser.
+If you commit to Bike or PT (Public Transport), this will also put a google maps link on your clipboard with the route.
+So you can immediately see what route is suggested in you browser. 
+This feature is no longer functional as it requires a paid Google API which was provided by one of the team members for the duration of the project.
+
+![Screenshot of Transportation Screen](doc/screenshots/Calculator.png)
+The Transportation tab also contains and [integrated carbon footprint calculator](https://calculator.carbonfootprint.com/calculator.aspx),
+which can be used to calculate the impact of various activities with great detail.
 
 ### Leaderboard
 ![Screenshot of the Leaderboard Screen](doc/screenshots/Leaderboard.png)
-Compare your score with the best users.
 
 ### Profile
 ![Screenshot of Profile](doc/screenshots/Profile.png)
-There are in total 12 different achievement, each with a varying degree of difficulty
+There are 12 different achievements, each with varying degree of difficulty which can be viewed under the profile section.
+The user can also switch the color theme of the app according to their liking and see profile statistics.
 
 
